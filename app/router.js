@@ -8,4 +8,5 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('about')
+  this.route('contact',{path: '/getting-in-touch'}) // localhost200/getting-in-touch
 }); // this will be used to route pages
