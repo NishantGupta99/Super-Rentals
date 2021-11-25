@@ -38,10 +38,10 @@ module('Acceptance | super rentals', function (hooks) {
     assert.dom("h2").hasText('Contact Us')
 
 
-    assert.dom('.jumbo a.button').hasText('Contact Us');
+    assert.dom('.jumbo a.button').hasText('About');
     await click('.jumbo a.button');
 
-    assert.equal(currentURL(), '/getting-in-touch');
+    assert.equal(currentURL(), '/about');
 
 
   });
