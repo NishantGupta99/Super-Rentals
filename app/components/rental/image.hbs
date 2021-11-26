@@ -1,11 +1,11 @@
 {{#if this.isLarge}}
- <div class="image large">
-     <img ...attributes>
-     <small>view Smaller</small>
- </div>
- {{else}}
- <div class="image">
-     <img ...attributes>
-     <small>View Larger</small>
- </div>
- {{/if}}
+<button type="button" class="image large" {{on "click" this.toggleSize}}>
+    <img ...attributes>
+    <small>view Smaller</small>
+</button>
+{{else}}
+<button type="button" class="image" {{on "click" this.toggleSize}}>
+<img ...attributes>
+<small>View Larger</small>
+</button>
+{{/if}}
